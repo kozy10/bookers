@@ -1,0 +1,13 @@
+<%= notice %>
+
+
+
+<h3 class="title-headline">Title:</h3>
+<p class="title-book"><%= @book.title %>
+
+<h3 class="body-headline">Body:</h3>
+<p class="body-book"><%= @book.body %>
+
+
+<%= link_to "Edit", edit_book_path(@book) %>
+<%= link_to "Back", books_path, :class => "back" %>
