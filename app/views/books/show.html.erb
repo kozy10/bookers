@@ -2,12 +2,11 @@
 
 
 
-<h3 class="title-headline">Title:</h3>
-<p class="title-book"><%= @book.title %>
+<p><strong>Title:</strong> <%= @book.title %></p>
 
-<h3 class="body-headline">Body:</h3>
-<p class="body-book"><%= @book.body %>
+<p><strong>Body:</strong> <%= @book.body %></p>
 
 
 <%= link_to "Edit", edit_book_path(@book) %>
+|
 <%= link_to "Back", books_path, :class => "back" %>
