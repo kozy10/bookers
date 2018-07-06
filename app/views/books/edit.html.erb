@@ -6,6 +6,7 @@
 	<%= f.text_field :body %>
 	<%= f.submit 'Update Book' %>
 
-	<%= link_to "show", book_path(@book.id), :class => "詳細" %>
+	<%= link_to "Show", book_path(@book.id), class: "Show_#{@book.id}" %>
+	<%= link_to "Back", books_path, class: "Back" %>
 	
 <% end %>
